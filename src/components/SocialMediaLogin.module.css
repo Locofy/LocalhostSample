@@ -1,0 +1,27 @@
+.socialMediaLogin {
+  align-self: stretch;
+  border-top: var(--border-2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-34) var(--padding-0) var(--padding-0);
+  gap: var(--n-6);
+  text-align: left;
+  font-size: var(--fs-16);
+  color: var(--Dark);
+  font-family: var(--font-archivo);
+}
+.label {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 160%;
+}
+.socialLoginContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--n-8);
+}

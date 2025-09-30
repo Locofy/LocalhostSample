@@ -1,0 +1,87 @@
+.content {
+  width: 100%;
+  border-radius: var(--br-16);
+  background-color: var(--White);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--n-19);
+  box-sizing: border-box;
+  gap: var(--n-13);
+  max-width: 600px;
+  text-align: left;
+  font-size: var(--fs-26);
+  color: var(--Dark);
+  font-family: var(--font-archivo);
+}
+.formTitle {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.signUpForm {
+  gap: var(--n-18);
+  text-align: center;
+  font-size: var(--fs-16);
+  color: var(--Dark);
+  font-family: var(--font-archivo);
+}
+.form,
+.formFields,
+.signUpForm {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form {
+  margin: 0;
+  gap: var(--n-13);
+}
+.formFields {
+  gap: var(--n-9);
+}
+.email {
+  border: var(--border-1);
+  background-color: transparent;
+  align-self: stretch;
+  font-family: var(--font-archivo);
+  font-size: var(--fs-16);
+  color: var(--Light-Text);
+}
+.searchFlightsButton {
+  width: var(--width-160);
+  padding: 13px var(--padding-20);
+  box-sizing: border-box;
+}
+.searchFlightsButton:hover {
+  background-color: var(--color-saddlebrown);
+}
+.iAlreadyHaveContainer {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 160%;
+  cursor: pointer;
+}
+.login {
+  color: var(--Accent);
+}
+@media screen and (max-width: 800px) {
+  .content {
+    padding-top: var(--padding-26);
+    padding-bottom: var(--padding-26);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .signUpForm {
+    gap: var(--gap-18);
+  }
+}
+@media screen and (max-width: 450px) {
+  .formTitle {
+    font-size: 21px;
+  }
+}

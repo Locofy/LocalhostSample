@@ -1,0 +1,43 @@
+.propertyDetails {
+  width: 100%;
+  position: relative;
+  background-color: var(--White);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.listingDetailsSection,
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main {
+  background-color: var(--White);
+  padding: var(--n-11);
+  box-sizing: border-box;
+  gap: var(--n-19);
+  max-width: 1380px;
+}
+.listingDetailsSection {
+  gap: var(--n-16);
+  max-width: var(--max-w-1340);
+}
+@media screen and (max-width: 1400px) {
+  .main {
+    width: calc(100% - 40px);
+  }
+  .listingDetailsSection,
+  .main {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 825px) {
+  .main {
+    gap: var(--gap-20);
+  }
+}

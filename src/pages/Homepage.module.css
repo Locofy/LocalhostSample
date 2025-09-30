@@ -1,0 +1,97 @@
+.homepage,
+.staysSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homepage {
+  width: 100%;
+  position: relative;
+  background-color: var(--White);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.homepage:hover,
+.homes:hover {
+  align-items: center;
+  justify-content: flex-start;
+}
+.staysSection {
+  align-self: stretch;
+  padding: var(--n-13) var(--n-11);
+  gap: var(--n-11);
+  text-align: left;
+  font-size: var(--fs-20);
+  color: var(--Dark);
+  font-family: var(--font-archivo);
+}
+.searchSectionHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--n-8) var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  gap: var(--gap-0);
+  max-width: var(--max-w-1340);
+}
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: var(--n-1);
+}
+.staysNearby,
+.torontoOntario {
+  margin: 0;
+  position: relative;
+}
+.layoutSelection {
+  border-radius: 9px;
+  background-color: var(--White);
+  border: 0.7px solid var(--Light-grey-border);
+  display: flex;
+  align-items: center;
+  padding: var(--n-4);
+}
+.layoutSelectionChild {
+  border-radius: 6px;
+}
+.layoutSelectionChild,
+.layoutSelectionItem {
+  height: var(--height-36);
+  width: var(--width-36);
+}
+.homes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: var(--gap-20);
+  max-width: var(--max-w-1340);
+}
+.showMoreButton {
+  padding: var(--n-7) 29px;
+}
+@media screen and (max-width: 1350px) {
+  .staysSection {
+    padding-top: var(--padding-20);
+    padding-bottom: var(--padding-20);
+    box-sizing: border-box;
+  }
+  .homes,
+  .searchSectionHeader {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .searchSectionHeader {
+    flex-wrap: wrap;
+  }
+  .staysNearby,
+  .torontoOntario {
+    font-size: var(--fs-16);
+    line-height: var(--lh-19);
+  }
+}

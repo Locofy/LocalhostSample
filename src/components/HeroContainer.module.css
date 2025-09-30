@@ -1,0 +1,124 @@
+.heroContainer {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--n-20) var(--n-11) var(--n-16);
+  background-image: url(/public/Hero-Container@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: 40.4px;
+  color: var(--Dark);
+  font-family: var(--font-archivo);
+}
+.content,
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content {
+  width: 100%;
+  gap: var(--gap-24);
+  max-width: var(--max-w-1340);
+}
+.titleContainer {
+  align-self: stretch;
+  gap: var(--gap-8);
+}
+.title {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.host {
+  color: var(--Accent);
+}
+.form,
+.subtitle {
+  align-self: stretch;
+}
+.subtitle {
+  margin: 0;
+  position: relative;
+}
+.form {
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-10);
+  background-color: var(--White);
+  border: 0.7px solid var(--Light-grey-border);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: var(--padding-11) var(--padding-12);
+  gap: var(--gap-12);
+}
+.accomodationInput {
+  border: var(--border-1);
+  background-color: transparent;
+  flex: 1;
+  font-family: var(--font-roboto);
+  font-size: var(--fs-14);
+  color: var(--Dark);
+  min-width: 335px;
+}
+.inputContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: var(--gap-12);
+  min-width: 454px;
+}
+.checkinDatepicker,
+.guestInput {
+  flex: 1;
+  min-width: var(--min-w-72);
+}
+.guestInput {
+  border: var(--border-1);
+  background-color: transparent;
+  font-family: var(--font-roboto);
+  font-size: var(--fs-14);
+  color: var(--Dark);
+}
+.searchButton {
+  padding: var(--padding-16) 35px;
+}
+@media screen and (max-width: 1350px) {
+  .content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: var(--fs-32);
+    line-height: var(--lh-36);
+  }
+  .accomodationInput,
+  .checkinDatepicker,
+  .guestInput,
+  .inputContainer {
+    min-width: 100%;
+  }
+  .searchButton {
+    text-align: center;
+    flex: 1;
+    min-width: 157px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: var(--fs-24);
+    line-height: 27px;
+  }
+  .subtitle {
+    font-size: var(--fs-16);
+    line-height: var(--lh-19);
+  }
+}

@@ -1,0 +1,40 @@
+.icontrend {
+  width: var(--width-22);
+  position: relative;
+  height: var(--height-22);
+}
+.icon,
+.iconParent {
+  position: absolute;
+  height: 81.82%;
+  width: 93.64%;
+  top: 9.09%;
+  right: 3.18%;
+  bottom: 9.09%;
+  left: 3.18%;
+}
+.icon {
+  height: 43.33%;
+  width: 63.11%;
+  top: 28.33%;
+  right: 18.45%;
+  bottom: 28.33%;
+  left: 18.45%;
+  border-radius: 0.5px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.trendBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -7.28%;
+  bottom: -8.33%;
+  left: 0;
+  border-radius: 3.5px;
+  border: 1.5px solid var(--Accent);
+  box-sizing: border-box;
+  z-index: 1;
+}

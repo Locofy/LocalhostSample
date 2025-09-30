@@ -1,0 +1,208 @@
+.leftSection,
+.locationAmenities {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--n-11);
+}
+.locationAmenities {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: left;
+  font-size: var(--fs-24);
+  color: var(--Dark);
+  font-family: var(--font-archivo);
+}
+.leftSection {
+  flex: 1;
+  flex-direction: column;
+  min-width: var(--min-w-500);
+}
+.amenities {
+  margin: 0;
+  width: 780.8px;
+  position: relative;
+  display: inline-block;
+}
+.amenitiesGrid,
+.wrappedLayer {
+  display: flex;
+  align-items: flex-start;
+}
+.amenitiesGrid {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--n-17);
+}
+.wrappedLayer {
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--n-2);
+  max-width: 1280px;
+}
+.searchFlightsButton {
+  padding: var(--n-7) var(--padding-19);
+}
+.searchFlightsButton:hover {
+  background-color: var(--color-saddlebrown);
+}
+.mapSection {
+  width: var(--width-500);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mapContainer,
+.mapDetails {
+  align-self: stretch;
+  display: flex;
+}
+.mapDetails {
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: var(--n-11);
+}
+.mapContainer {
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-0);
+  row-gap: var(--gap-20);
+  z-index: 0;
+}
+.mapInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--n-3);
+  min-width: 227px;
+}
+.whereYoullBe {
+  margin: 0;
+  position: relative;
+}
+.addressIconParent {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-6);
+  font-size: var(--fs-16);
+}
+.addressIcon {
+  height: var(--height-11);
+  width: 9.3px;
+}
+.addressIcon,
+.theBridlePath {
+  position: relative;
+}
+.weatherInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--n-6);
+  font-size: var(--fs-16);
+}
+.suncloudIcon {
+  width: var(--width-48);
+  position: relative;
+  max-height: 100%;
+}
+.locationAmenitiesWeatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--n-1);
+}
+.temperature,
+.weatherDetail {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.temperature {
+  line-height: 150%;
+  font-weight: 600;
+}
+.weatherDetail {
+  font-size: var(--fs-14);
+  color: var(--Light-Text);
+}
+.mapAreaIcon {
+  align-self: stretch;
+  height: 248px;
+  position: relative;
+  border-radius: var(--br-8);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.mapOverlays {
+  width: 37px;
+  margin: 0 !important;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border-radius: var(--br-4);
+  background-color: var(--White);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 8.9px var(--padding-11) 17.3px;
+  box-sizing: border-box;
+  gap: 14.2px;
+  z-index: 2;
+}
+.zoomControls {
+  margin-right: -11.7px;
+  width: 38.5px;
+  height: 24.6px;
+  position: relative;
+  z-index: 2;
+}
+.zoomControlsChild {
+  position: absolute;
+  top: 0;
+  left: 11.8px;
+  width: var(--width-15);
+  height: var(--height-15);
+}
+.plusIcon {
+  position: absolute;
+  top: 23.6px;
+  left: 0;
+  width: 38.5px;
+  height: var(--height-1);
+}
+.mapOverlaysChild {
+  width: var(--width-15);
+  position: relative;
+  height: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 1400px) {
+  .wrappedLayer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 825px) {
+  .leftSection {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .amenities {
+    font-size: var(--fs-19);
+  }
+  .amenitiesGrid {
+    gap: var(--gap-16);
+  }
+  .mapContainer {
+    flex-wrap: wrap;
+  }
+  .whereYoullBe {
+    font-size: var(--fs-19);
+  }
+}

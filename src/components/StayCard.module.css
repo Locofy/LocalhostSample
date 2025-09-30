@@ -1,0 +1,131 @@
+.imageContainer,
+.staycard {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.staycard {
+  border-radius: var(--br-10);
+  background-color: var(--White);
+  overflow: hidden;
+  flex-shrink: 0;
+  min-width: var(--min-w-370);
+  row-gap: var(--gap-20);
+  text-align: left;
+  font-size: var(--fs-12);
+  color: var(--Accent);
+  font-family: var(--font-archivo);
+}
+.imageContainer {
+  align-self: stretch;
+  justify-content: space-between;
+  padding: var(--padding-10);
+  box-sizing: border-box;
+  gap: var(--gap-0);
+  background-image: url(/public/Image-Container@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: var(--min-w-150);
+  max-width: var(--max-w-180);
+}
+.superhostTag {
+  border-radius: var(--br-13);
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  padding: var(--padding-6) var(--padding-7);
+  gap: var(--gap-2);
+}
+.superhostIcon {
+  height: var(--height-10);
+  width: var(--width-6_7);
+  position: relative;
+}
+.superhost {
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.heartIcon {
+  height: var(--height-30);
+  width: var(--width-30);
+  position: relative;
+}
+.container,
+.content,
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container {
+  flex: 0.9483;
+  border-radius: var(--br-0) var(--br-10) var(--br-10) var(--br-0);
+  border: var(--border-2);
+  box-sizing: border-box;
+  padding: var(--padding-14) var(--padding-15);
+  gap: var(--n-11);
+  min-width: var(--min-w-220);
+  font-size: var(--fs-16);
+  color: var(--Dark);
+}
+.content,
+.textContent {
+  align-self: stretch;
+  gap: var(--n-7);
+}
+.textContent {
+  gap: var(--n-2);
+}
+.stayName,
+.stayPlace {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.stayName {
+  font-weight: 600;
+}
+.stayPlace {
+  font-size: var(--fs-14);
+  color: var(--Light-Text);
+}
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-5);
+  font-size: var(--fs-14);
+}
+.rating {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.reviewCountIcon {
+  height: var(--height-13);
+  width: var(--width-13);
+  position: relative;
+}
+.priceContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: var(--n-1);
+  color: var(--Accent);
+}
+.night {
+  flex: 1;
+  position: relative;
+  font-size: var(--fs-14);
+  letter-spacing: 0.02em;
+  color: var(--Light-Text);
+}
+@media screen and (max-width: 450px) {
+  .staycard {
+    flex-wrap: wrap;
+  }
+  .container {
+    flex: 1;
+  }
+}
