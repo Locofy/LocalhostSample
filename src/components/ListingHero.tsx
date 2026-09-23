@@ -11,144 +11,154 @@ const ListingHero: FunctionComponent<ListingHeroType> = ({
   className = "",
 }) => {
   return (
-    <section className={[styles.listingHero, className].join(" ")}>
-      <section className={styles.imageGallery}>
-        <img
-          className={styles.mainImageIcon}
-          loading="lazy"
-          alt=""
-          src="/main-image@2x.png"
-        />
-        <Box className={styles.thumbnailContainer}>
-          <img
-            className={styles.thumbnailsIcon}
-            loading="lazy"
-            alt=""
-            src="/thumbnails@2x.png"
-          />
-          <img
-            className={styles.thumbnailsIcon}
-            alt=""
-            src="/thumbnails4@2x.png"
-          />
-          <img
-            className={styles.thumbnailsIcon}
-            alt=""
-            src="/thumbnails3@2x.png"
-          />
-          <img
-            className={styles.thumbnailsIcon}
-            alt=""
-            src="/thumbnails2@2x.png"
-          />
-          <img
-            className={styles.thumbnailsIcon4}
-            alt=""
-            src="/thumbnails1@2x.png"
-          />
-        </Box>
-      </section>
-      <section className={styles.propertyInformation}>
-        <Box className={styles.topSection}>
-          <Box className={styles.headingContainer}>
-            <Box className={styles.container}>
-              <Box className={styles.textContent}>
-                <Typography
-                  className={styles.propertyName}
-                  variant="inherit"
-                  variantMapping={{ inherit: "h2" }}
-                  sx={{ fontWeight: "600", letterSpacing: "0.02em" }}
-                >
-                  Brightwoods Cabin
-                </Typography>
-                <div className={styles.propertyAddress}>
-                  Bridlepath, Ontario, Canada
-                </div>
-              </Box>
-              <img
-                className={styles.heartIcon}
-                loading="lazy"
-                alt=""
-                src="/hearticon1.svg"
-              />
-            </Box>
-            <Box className={styles.ratingAndReviewContainer}>
-              <Box className={styles.ratingContainer}>
-                <div className={styles.rating}>5.0</div>
-                <img
-                  className={styles.ratingStarIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/rating-star.svg"
-                />
-              </Box>
-              <Box className={styles.reviewContainer}>
-                <div className={styles.reviews}>200 Reviews</div>
-              </Box>
-            </Box>
+    <section
+      className={[styles.listingHero, className].filter(Boolean).join(" ")}
+      aria-label="Brightwoods Cabin listing"
+    >
+      <div className={styles.layout}>
+        <section
+          className={styles.reservationCard}
+          aria-label="Reservation details"
+        >
+          <Box className={styles.priceLine}>
+            <Typography
+              className={styles.price}
+              component="h1"
+              variant="inherit"
+              sx={{ fontWeight: 700, letterSpacing: "0.01em" }}
+            >
+              $658
+            </Typography>
+            <span className={styles.night}>/night</span>
           </Box>
-          <div
-            className={styles.description}
-          >{`Welcome to our cozy cabin retreat nestled in the heart of Bridlepath, Ontario! Surrounded by lush landscapes and tranquil trails, this charming getaway offers the perfect blend of rustic elegance and modern comfort. `}</div>
-        </Box>
-        <Box className={styles.bottomSection}>
-          <Box className={styles.priceInformation}>
-            <Box className={styles.priceContainer}>
-              <Typography
-                className={styles.price}
-                variant="inherit"
-                variantMapping={{ inherit: "h1" }}
-                sx={{ fontWeight: "700", letterSpacing: "0.02em" }}
-              >
-                $658
-              </Typography>
-              <div className={styles.night}>/night</div>
-            </Box>
-            <Box className={styles.icontrendParent}>
-              <Trend />
-              <div className={styles.bestTimeTo}>Best time to Book</div>
-            </Box>
+          <Box className={styles.bestTime}>
+            <Trend />
+            <span>Best time to Book</span>
           </Box>
           <Button
-            className={styles.searchFlightsButton}
+            className={styles.bookButton}
             disableElevation
             variant="contained"
             sx={{
               textTransform: "none",
               color: "#fff",
-              fontSize: "16",
-              background: "#00c29f",
+              fontFamily: "var(--font-roboto)",
+              fontSize: 15,
+              fontWeight: 600,
+              letterSpacing: 0,
+              backgroundColor: "var(--Accent)",
               borderRadius: "6px",
-              "&:hover": { background: "#00c29f" },
+              "&:hover": { backgroundColor: "#00b391" },
             }}
           >
             Book this home
           </Button>
+          <Box className={styles.hostBlock}>
+            <div className={styles.hostLabel}>Hosted by:</div>
+            <div className={styles.hostProfile}>
+              <img
+                className={styles.hostAvatar}
+                loading="lazy"
+                alt=""
+                src="/host-avatar@2x.png"
+              />
+              <div className={styles.hostDetails}>
+                <div className={styles.hostName}>Michelle Ward</div>
+                <div className={styles.joined}>Joined in May 2021</div>
+              </div>
+              <div className={styles.superhostBadge}>
+                <img
+                  className={styles.checkmark}
+                  alt=""
+                  src="/checkmark-icon.svg"
+                />
+                <span>Superhost</span>
+              </div>
+            </div>
+          </Box>
+        </section>
+
+        <Box
+          component="section"
+          className={styles.photoMosaic}
+          aria-label="Cabin photos"
+        >
+          <img
+            className={`${styles.mosaicPhoto} ${styles.mainPhoto}`}
+            loading="lazy"
+            alt=""
+            src="/main-image@2x.png"
+          />
+          <img
+            className={`${styles.mosaicPhoto} ${styles.photoSecond}`}
+            loading="lazy"
+            alt=""
+            src="/thumbnails@2x.png"
+          />
+          <img
+            className={`${styles.mosaicPhoto} ${styles.photoThird}`}
+            alt=""
+            src="/thumbnails4@2x.png"
+          />
+          <img
+            className={`${styles.mosaicPhoto} ${styles.photoFourth}`}
+            alt=""
+            src="/thumbnails3@2x.png"
+          />
+          <img
+            className={`${styles.mosaicPhoto} ${styles.photoFifth}`}
+            alt=""
+            src="/thumbnails2@2x.png"
+          />
+          <img
+            className={`${styles.mosaicPhoto} ${styles.photoSixth}`}
+            alt=""
+            src="/thumbnails1@2x.png"
+          />
         </Box>
-        <Box className={styles.hostInfo}>
-          <div className={styles.bestTimeTo}>Hosted by:</div>
-          <Box className={styles.hostProfile}>
+
+        <aside className={styles.listingFacts} aria-label="Listing facts">
+          <Box className={styles.titleRow}>
+            <div>
+              <Typography
+                className={styles.title}
+                component="h2"
+                variant="inherit"
+                sx={{ fontWeight: 600, letterSpacing: "0.01em" }}
+              >
+                Brightwoods Cabin
+              </Typography>
+              <div className={styles.address}>
+                Bridlepath, Ontario, Canada
+              </div>
+            </div>
             <img
-              className={styles.hostAvatarIcon}
+              className={styles.heart}
               loading="lazy"
               alt=""
-              src="/host-avatar@2x.png"
+              src="/hearticon1.svg"
             />
-            <Box className={styles.hostDetails}>
-              <div className={styles.michelleWard}>Michelle Ward</div>
-              <div className={styles.joinedInMay}>Joined in May 2021</div>
-            </Box>
-            <Box className={styles.superhostBadge}>
-              <img
-                className={styles.checkmarkIcon}
-                alt=""
-                src="/checkmark-icon.svg"
-              />
-              <div className={styles.superhost}>Superhost</div>
-            </Box>
           </Box>
-        </Box>
-      </section>
+          <Box className={styles.ratingRow}>
+            <div className={styles.rating} aria-label="Rated 5.0">
+              <span>5.0</span>
+              <img
+                className={styles.star}
+                loading="lazy"
+                alt=""
+                src="/rating-star.svg"
+              />
+            </div>
+            <div className={styles.reviews}>200 Reviews</div>
+          </Box>
+          <p className={styles.description}>
+            Welcome to our cozy cabin retreat nestled in the heart of
+            Bridlepath, Ontario! Surrounded by lush landscapes and tranquil
+            trails, this charming getaway offers the perfect blend of rustic
+            elegance and modern comfort.
+          </p>
+        </aside>
+      </div>
     </section>
   );
 };
