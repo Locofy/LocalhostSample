@@ -180,28 +180,23 @@
   grid-row: 1 / span 2;
 }
 
-.photoSecond {
+.photoTopRight {
   grid-column: 3;
   grid-row: 1;
 }
 
-.photoThird {
+.photoMiddleRight {
   grid-column: 3;
   grid-row: 2;
 }
 
-.photoFourth {
+.photoBottomLeft {
   grid-column: 1;
   grid-row: 3;
 }
 
-.photoFifth {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.photoSixth {
-  grid-column: 3;
+.photoBottomWide {
+  grid-column: 2 / span 2;
   grid-row: 3;
 }
 

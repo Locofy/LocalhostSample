@@ -90,28 +90,22 @@ const ListingHero: FunctionComponent<ListingHeroType> = ({
             src="/main-image@2x.png"
           />
           <img
-            className={`${styles.mosaicPhoto} ${styles.photoSecond}`}
-            loading="lazy"
-            alt=""
-            src="/thumbnails@2x.png"
-          />
-          <img
-            className={`${styles.mosaicPhoto} ${styles.photoThird}`}
+            className={`${styles.mosaicPhoto} ${styles.photoTopRight}`}
             alt=""
             src="/thumbnails4@2x.png"
           />
           <img
-            className={`${styles.mosaicPhoto} ${styles.photoFourth}`}
+            className={`${styles.mosaicPhoto} ${styles.photoMiddleRight}`}
             alt=""
             src="/thumbnails3@2x.png"
           />
           <img
-            className={`${styles.mosaicPhoto} ${styles.photoFifth}`}
+            className={`${styles.mosaicPhoto} ${styles.photoBottomLeft}`}
             alt=""
             src="/thumbnails2@2x.png"
           />
           <img
-            className={`${styles.mosaicPhoto} ${styles.photoSixth}`}
+            className={`${styles.mosaicPhoto} ${styles.photoBottomWide}`}
             alt=""
             src="/thumbnails1@2x.png"
           />
